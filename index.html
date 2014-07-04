@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+  <style type="text/css">
+    body {
+      background-color: #FFF;
+    }
+    .quadrant {
+      width: 300px;
+      margin: 53px 0;
+      float: left;
+      position: relative;
+    }
+    /* rotation */
+    .quadrant:nth-child(1) {
+      transform: rotate(225deg);
+    }
+    .quadrant:nth-child(2) {
+      transform: rotate(315deg);
+    }
+    .quadrant:nth-child(3) {
+      transform: rotate(135deg);
+    }
+    .quadrant:nth-child(4) {
+      transform: rotate(45deg);
+    }
+    .quadrant:nth-child(2n) {
+      margin-left: -65px;
+    }
+    .quadrant > .swarm {
+      display: block;
+      padding: 0px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      height: 20px;
+      background-color: #000;
+      border-radius: 10px;
+    }
+    /* linebreak at third quadrant */
+    .quadrant:nth-child(3) {
+      clear: both;
+    }
+    /* SWARM CONFIGURATION */
+    /* swarm margins - left */
+    .quadrant > .swarm:nth-child(1),
+    .quadrant > .swarm:nth-child(5) {
+      margin-left: 48px;
+    }
+    .quadrant > .swarm:nth-child(2),
+    .quadrant > .swarm:nth-child(4) {
+      margin-left: 24px;
+    }
+    /* swarm margins - right */
+    .quadrant > .swarm:nth-child(1) {
+      margin-right: 62px;
+    }
+    .quadrant > .swarm:nth-child(2) {
+      margin-right: 30px;
+    }
+    .quadrant > .swarm:nth-child(3) {
+      margin-right: 60px;
+    }
+    .quadrant > .swarm:nth-child(4) {
+      margin-right: 120px;
+    }
+    .quadrant > .swarm:nth-child(5) {
+      margin-right: 50px;
+    }
+
+    .swarm {
+      position: relative;
+      background: #1b7da6; /* Old browsers */
+      background: -moz-linear-gradient(left, #1b7da6 0%, #0e141f 80%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1b7da6), color-stop(80%,#0e141f)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(left, #1b7da6 0%,#0e141f 80%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(left, #1b7da6 0%,#0e141f 80%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(left, #1b7da6 0%,#0e141f 80%); /* IE10+ */
+      background: linear-gradient(to right, #1b7da6 0%,#0e141f 80%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b7da6', endColorstr='#0e141f',GradientType=1 ); /* IE6-9 */
+    }
+    .swarm .ball {
+      float: left;
+      height: 20px;
+      width: 20px;
+      border-radius: 10px;
+      background-color: #4999b3;
+    }
+    .swarm .lowerGradient {
+      height: 20px;
+      display: block;
+      margin-left: 100px;
+      border-radius: 10px;
+      background: #1b7da6; /* Old browsers */
+      background: -moz-linear-gradient(left, #1b7da6 0%, #000000 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1b7da6), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(left, #1b7da6 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(left, #1b7da6 0%,#000000 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(left, #1b7da6 0%,#000000 100%); /* IE10+ */
+      background: linear-gradient(to right, #1b7da6 0%,#000000 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b7da6', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+    }
+  </style>
+</html>
+<body>
+  <div class="quadrant">
+    <div class="swarm">
+      <div class="ball"></div>
+      <div class="lowerGradient"></div>
+    </div>
+    <div class="swarm">
+      <div class="ball"></div>
+      <div class="lowerGradient"></div>
+    </div>
+    <div class="swarm">
+      <div class="ball"></div>
+      <div class="lowerGradient"></div>
+    </div>
+    <div class="swarm">
+      <div class="ball"></div>
+    </div>
+    <div class="swarm">
+      <div class="ball"></div>
+      <div class="lowerGradient"></div>
+    </div>
+  </div>
+  <div class="quadrant">
+    <div class="swarm">
+      <div class="ball"></div>
+      <div class="lowerGradient"></div>
+    </div>
+    <div class="swarm">
+      <div class="ball"></div>
+      <div class="lowerGradient"></div>
+    </div>
+    <div class="swarm">
+      <div class="ball"></div>
+      <div class="lowerGradient"></div>
+    </div>
+    <div class="swarm">
+      <div class="ball"></div>
+    </div>
+    <div class="swarm">
+      <div class="ball"></div>
+      <div class="lowerGradient"></div>
+    </div>
+  </div>
+    <div class="quadrant">
+    <div class="swarm">
+      <div class="ball"></div>
+      <div class="lowerGradient"></div>
+    </div>
+    <div class="swarm">
+      <div class="ball"></div>
+      <div class="lowerGradient"></div>
+    </div>
+    <div class="swarm">
+      <div class="ball"></div>
+      <div class="lowerGradient"></div>
+    </div>
+    <div class="swarm">
+      <div class="ball"></div>
+    </div>
+    <div class="swarm">
+      <div class="ball"></div>
+      <div class="lowerGradient"></div>
+    </div>
+  </div>
+  <div class="quadrant">
+    <div class="swarm">
+      <div class="ball"></div>
+      <div class="lowerGradient"></div>
+    </div>
+    <div class="swarm">
+      <div class="ball"></div>
+      <div class="lowerGradient"></div>
+    </div>
+    <div class="swarm">
+      <div class="ball"></div>
+      <div class="lowerGradient"></div>
+    </div>
+    <div class="swarm">
+      <div class="ball"></div>
+    </div>
+    <div class="swarm">
+      <div class="ball"></div>
+      <div class="lowerGradient"></div>
+    </div>
+  </div>
+</body>
+</html>
